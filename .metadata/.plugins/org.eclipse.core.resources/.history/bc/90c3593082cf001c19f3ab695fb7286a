@@ -1,0 +1,22 @@
+package controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import model.Reserva;
+import service.ReservaService;
+
+@RestController
+public class ReservaController {
+
+	@Autowired
+	ReservaService rs;
+	
+	@GetMapping(value = "Reservas")
+	public List<Reserva> getReservas(){
+	}
+	
+}

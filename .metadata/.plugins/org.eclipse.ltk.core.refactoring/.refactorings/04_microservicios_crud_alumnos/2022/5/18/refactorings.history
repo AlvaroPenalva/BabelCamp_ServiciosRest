@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;service&apos; in &apos;controller.AlumnosController&apos; to &apos;as&apos;&#x0D;&#x0A;- Original project: &apos;04_microservicios_crud_alumnos&apos;&#x0D;&#x0A;- Original element: &apos;controller.AlumnosController.service&apos;&#x0D;&#x0A;- Renamed element: &apos;controller.AlumnosController.as&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;service&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;controller{AlumnosController.java[AlumnosController^service" name="as" references="true" setter="false" stamp="1651822597161" textual="false" version="1.0"/>
+</session>

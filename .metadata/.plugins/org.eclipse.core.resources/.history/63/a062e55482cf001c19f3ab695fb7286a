@@ -1,0 +1,35 @@
+package service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.client.RestTemplate;
+
+import dao.ReservaDao;
+import model.Reserva;
+
+public class ReservaServiceImp implements ReservaService {
+
+	ReservaDao rd;
+	
+	RestTemplate template;
+	String urlHotel="http://localhost:8100/hoteles_rest";
+	String urlVuelo="http://localhost:8200/vuelos_rest";
+	
+	public ReservaServiceImp(@Autowired ReservaDao rd, @Autowired RestTemplate template) {
+		this.rd = rd;
+		this.template = template;
+	}
+	
+	@Override
+	public boolean reservar(Reserva reserva) {
+		
+		return false;
+	}
+
+	@Override
+	public List<Reserva> findAll() {
+		return rd.findAll();
+	}
+
+}

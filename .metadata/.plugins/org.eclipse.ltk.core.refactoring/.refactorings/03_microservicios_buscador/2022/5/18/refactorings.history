@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;config&apos; to &apos;05_microservicios_tienda/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;03_microservicios_buscador&apos;&#x0D;&#x0A;- Destination element: &apos;05_microservicios_tienda/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;03_microservicios_buscador/src/main/java/config&apos;" description="Copy package" destination="=05_microservicios_tienda/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;config" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1651750849740" version="1.0"/>
+</session>

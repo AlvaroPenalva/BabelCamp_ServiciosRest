@@ -1,0 +1,33 @@
+package service;
+
+import java.util.List;
+
+import org.springframework.web.client.RestTemplate;
+
+import model.Pais;
+
+public class PaisServiceImp implements PaisService {
+
+	RestTemplate template;
+	String urlBase="https://restcountries.com/v2/all";
+	
+	@Override
+	public List<String> continentes() {
+		Pais[] paises = template.getForObject(urlBase, Pais[].class);
+		return paises.stream(paises)
+				.map(p->p.getContinente())
+				.distinct()
+				.collect(Collectors.toList());
+	}
+
+	@Override
+	public List<Pais> paisPorContinente(String continente) {
+		return null;
+	}
+
+	@Override
+	public long habitantesContinente(String continente) {
+		return 0;
+	}
+
+}

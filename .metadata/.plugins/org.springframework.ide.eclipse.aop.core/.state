@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="05_microservicios_tienda"/>
+<aop-project name="04_microservicios_crud_alumnos"/>
+<aop-project name="07_microservicios_paises"/>
+<aop-project name="03_microservicios_buscador"/>
+<aop-project name="12_microservicio_reservas"/>
+<aop-project name="11_microservicio_vuelos"/>
+<aop-project name="09_microservicios_crud_alumnos_securizado"/>
+</aop-reference-model>

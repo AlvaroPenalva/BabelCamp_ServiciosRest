@@ -1,0 +1,8 @@
+package dao;
+
+public class AlumnosDao  extends JpaRepository<Alumno,Integer>{
+
+	@Query("select distinct(a.curso) from Alumno a")
+	List<String> findCursos();
+	
+}

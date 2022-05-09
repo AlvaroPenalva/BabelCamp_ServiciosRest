@@ -1,0 +1,39 @@
+package service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import dao.VueloDao;
+import model.Vuelo;
+
+@Service
+public class VueloServiceImp implements VueloService {
+
+	VueloDao vd;
+	
+	public VueloServiceImp(@Autowired VueloDao vd) {
+		this.vd = vd;
+	}
+	
+	@Override
+	public List<Vuelo> findByPlazas(int plazas) {
+		return vd.findAll();
+	}
+
+	@Override
+	public boolean updateVuelo(int idVuelo, int plazas) {
+		Optional<Vuelo> vuelo = vd.findById(idVuelo);
+		if(vuelo.isPresent()) {
+			Vuelo v = vuelo.get();
+			v.setPlazas(plazas);
+			vd.save(v);
+		}
+		return false;
+	}
+
+
+
+}
