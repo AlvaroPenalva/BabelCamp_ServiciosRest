@@ -39,7 +39,7 @@ public class ReservaServiceImp implements ReservaService {
 			if(plazas <= v.getPlazas()) {
 				ConversorReserva cr = new ConversorReserva();
 				Reserva r = cr.dtoToReserva(reserva);
-				template.put(urlVuelo + "/Vuelo?idVuelo=" + v.getIdVuelo() + "&plazas=" + (v.getPlazas() - plazas), null);
+				template.put(urlVuelo + "/Vuelo?idVuelo=" + v.getIdVuelo() + "&plazas=" + plazas, null);
 				rd.save(r);
 				return r;
 			}

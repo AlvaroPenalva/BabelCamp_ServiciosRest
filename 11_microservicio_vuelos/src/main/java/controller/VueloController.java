@@ -25,7 +25,7 @@ public class VueloController {
 	
 	@PutMapping(value ="Vuelo",produces=MediaType.TEXT_PLAIN_VALUE)
 	public String updateVuelo(@RequestParam("idVuelo") int idVuelo, @RequestParam("plazas") int plazas){
-		return String.valueOf(hs.updateVuelo(idVuelo, plazas));
+		return String.valueOf(hs.restarPlazasVuelo(idVuelo, plazas));
 	}
 	
 	@GetMapping(value ="VueloId/{idVuelo}",produces=MediaType.APPLICATION_JSON_VALUE)

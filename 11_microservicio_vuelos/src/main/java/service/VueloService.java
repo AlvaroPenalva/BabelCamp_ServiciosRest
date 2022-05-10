@@ -7,6 +7,6 @@ import model.Vuelo;
 public interface VueloService {
 
 	public List<Vuelo> findByPlazas(int plazas);
-	public boolean updateVuelo(int idVuelo, int plazas);
+	public boolean restarPlazasVuelo(int idVuelo, int plazas);
 	public Vuelo findById(int idVuelo);
 }

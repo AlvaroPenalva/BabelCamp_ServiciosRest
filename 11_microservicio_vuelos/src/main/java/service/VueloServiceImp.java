@@ -24,11 +24,11 @@ public class VueloServiceImp implements VueloService {
 	}
 
 	@Override
-	public boolean updateVuelo(int idVuelo, int plazas) {
+	public boolean restarPlazasVuelo(int idVuelo, int plazas) {
 		Optional<Vuelo> vuelo = vd.findById(idVuelo);
 		if(vuelo.isPresent()) {
 			Vuelo v = vuelo.get();
-			v.setPlazas(plazas);
+			v.setPlazas(v.getPlazas() - plazas);
 			vd.save(v);
 			return true;
 		}

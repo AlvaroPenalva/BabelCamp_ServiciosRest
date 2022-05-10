@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.http.client.support.BasicAuthenticationInterceptor;
 import org.springframework.web.client.RestTemplate;
 
-@SpringBootApplication(scanBasePackages = {"service", "controller"})
+@SpringBootApplication(scanBasePackages = {"service", "controller", "init"})
 @EnableJpaRepositories(basePackages = {"dao"})
 @EntityScan(basePackages = {"model"})
 public class Application {
