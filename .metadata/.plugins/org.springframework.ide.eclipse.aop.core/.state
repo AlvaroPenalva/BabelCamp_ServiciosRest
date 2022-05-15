@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="05_microservicios_tienda"/>
-<aop-project name="04_microservicios_crud_alumnos"/>
+<aop-project name="10_microservicio_hotel"/>
+<aop-project name="15_servidor_eureka"/>
 <aop-project name="07_microservicios_paises"/>
-<aop-project name="03_microservicios_buscador"/>
-<aop-project name="12_microservicio_reservas"/>
+<aop-project name="21_gateway"/>
+<aop-project name="25_microservicios_paises_documentado"/>
+<aop-project name="20_microservicio_reservas_eureka"/>
 <aop-project name="11_microservicio_vuelos"/>
+<aop-project name="16_microservicios_crud_alumnos_eureka"/>
+<aop-project name="23_microservicios_crud_alumnos_multiperfil"/>
+<aop-project name="18_microservicio_hotel_eureka"/>
+<aop-project name="17_microservicios_estudiantes_cliente_de_alumnos_por_eureka"/>
+<aop-project name="12_microservicio_reservas"/>
+<aop-project name="26_microservicios_crud_alumnos_securizado_jwt"/>
+<aop-project name="24_microservicio_hotel_documentado"/>
+<aop-project name="19_microservicio_vuelos_eureka"/>
 <aop-project name="09_microservicios_crud_alumnos_securizado"/>
 </aop-reference-model>

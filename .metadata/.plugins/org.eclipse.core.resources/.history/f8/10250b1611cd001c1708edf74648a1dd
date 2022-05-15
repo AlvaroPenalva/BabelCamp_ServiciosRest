@@ -1,7 +1,0 @@
-package service;
-
-import model.Student;
-
-public interface StudentService {
-	void altaStudent(Student student);
-}

@@ -1,0 +1,21 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /crud
+spring:
+  application:
+    name: servicio_students
+  datasource:
+    password: ''
+    username: root
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+        

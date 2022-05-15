@@ -1,8 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy>
-    <typeInfo handle="=06_microservicios_estudiantes_cliente_de_alumnos/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{StudentService.java[StudentService" modifiers="513" timestamp="1651823859490"/>
-    <typeInfo handle="=07_microservicios_paises/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{PaisService.java[PaisService" modifiers="513" timestamp="1651828440803"/>
-    <typeInfo handle="=10_microservicio_hotel/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{HotelService.java[HotelService" modifiers="513" timestamp="1652094275475"/>
-    <typeInfo handle="=12_microservicio_reservas/C:\/Users\/alvaro.penalva\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/2.6.4\/spring-data-jpa-2.6.4.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/2.6.4=/=/maven.scope=/compile=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1651748465510"/>
-    <typeInfo handle="=12_microservicio_reservas/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{ReservaService.java[ReservaService" modifiers="513" timestamp="1652093344343"/>
-</typeInfoHistroy>
+<typeInfoHistroy/>
