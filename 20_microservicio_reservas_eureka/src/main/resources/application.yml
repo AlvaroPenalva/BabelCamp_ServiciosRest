@@ -1,7 +1,5 @@
 server:
   port: 8300
-  servlet:
-    context-path: /reservas_rest
 spring:
   application:
     name: servicio-reservas

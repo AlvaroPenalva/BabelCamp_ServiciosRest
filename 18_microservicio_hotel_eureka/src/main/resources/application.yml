@@ -1,7 +1,5 @@
 server:
   port: 8100
-  servlet:
-    context-path: /hoteles_rest
 spring:
   application:
     name: servicio-hoteles

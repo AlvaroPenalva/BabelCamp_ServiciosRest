@@ -1,6 +1,0 @@
-package model;
-
-@Entity
-public class Alumno {
-
-}

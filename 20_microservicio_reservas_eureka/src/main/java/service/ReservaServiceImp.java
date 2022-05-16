@@ -21,8 +21,8 @@ public class ReservaServiceImp implements ReservaService {
 	ReservaDao rd;
 
 	RestTemplate template;
-	String urlHotel = "http://servicio-hoteles/hoteles_rest";
-	String urlVuelo = "http://servicio-vuelos/vuelos_rest";
+	String urlHotel = "http://servicio-hoteles/";
+	String urlVuelo = "http://servicio-vuelos/";
 
 	public ReservaServiceImp(@Autowired ReservaDao rd, @Autowired RestTemplate template) {
 		this.rd = rd;
@@ -43,7 +43,7 @@ public class ReservaServiceImp implements ReservaService {
 				Reserva r = cr.dtoToReserva(reserva);
 				//con esto podemos comprobar que nos devuelve put
 				ResponseEntity<String> response = template
-						.exchange(urlVuelo + "/Vuelo?idVuelo=" + v.getIdVuelo() + "&plazas=" + plazas, HttpMethod.PUT, null, String.class);
+						.exchange(urlVuelo + "/Vuelo?idVuelo=" + v.getIdvuelo() + "&plazas=" + plazas, HttpMethod.PUT, null, String.class);
 				//guardamos el body, en nuestro caso un string que es true o false
 				String cuerpo = response.getBody();
 				if(cuerpo.equals("true"))

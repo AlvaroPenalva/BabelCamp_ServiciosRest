@@ -15,7 +15,7 @@
 
 <script type="text/javascript">
 	function cargarVuelos(){
-		var url="http://localhost:10000/svuelos/vuelos_rest/Vuelos/"+$("#plazas").val();
+		var url="http://localhost:10000/svuelos/Vuelos/"+$("#plazas").val();
 		
 		$.get(url,function(data,status){			
 			var res="";
@@ -28,7 +28,7 @@
 		});
 	}
 	function cargarHoteles(){
-		var url="http://localhost:10000/shoteles/hoteles_rest/Hoteles";
+		var url="http://localhost:10000/shoteles/Hoteles";
 		
 		$.get(url,function(data,status){			
 			var res="";
@@ -41,7 +41,7 @@
 		});
 	}
 	function reservar(){	
-		var url="http://localhost:10000/sreservas/reservas_rest/Reserva/";
+		var url="http://localhost:10000/sreservas/Reserva/";
 		
 		var datos=new Object();
 		datos.dni=$("#dni").val();
