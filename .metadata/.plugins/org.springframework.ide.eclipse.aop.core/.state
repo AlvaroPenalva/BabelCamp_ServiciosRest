@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="33_servicio_pedidos"/>
+<aop-project name="15_servidor_eureka"/>
+<aop-project name="29_microservicio_hotel_eureka_config"/>
+<aop-project name="29_microservicio_vuelos_eureka_config"/>
+<aop-project name="21_gateway"/>
 <aop-project name="27_microservicios_estudiantes_cliente_de_alumnos_jwt"/>
+<aop-project name="34_gateway_pedidos"/>
+<aop-project name="31_microservicio_reservas_eureka_config"/>
+<aop-project name="28_servidor_configuracion"/>
+<aop-project name="32_servicio_productos"/>
 </aop-reference-model>

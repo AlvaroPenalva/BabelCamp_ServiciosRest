@@ -17,19 +17,27 @@ export class TokenServiceService {
     let dto:CredentialDto = new CredentialDto();
     dto.pwd=this.pwd;
     dto.user=this.user;
-    this.http.post<string>(this.urlBase +"/login", dto).subscribe(tk=>this.token = tk);
+    let heads:HttpHeaders = new HttpHeaders();
+    this.http.post<string>(this.urlBase +"/login", dto, {responseType: 'text'}).subscribe(tk=>{
+      console.log(tk);
+      this.token = tk;
+    });
   }
 
   getStudentId(idAlumno:number){
-    if(this.token == null || this.token == "") this.getToken;
+    if(this.token == null || this.token == ""){
+      this.getToken();
+    }
 
     let heads:HttpHeaders = new HttpHeaders();
     heads.append("Authorization", "Bearer " + this.token);
-    return this.http.get<Student[]>(this.urlBase+ "Alumno" + idAlumno, {headers:heads});
+    return this.http.get<Student[]>(this.urlBase+ "/Alumno/" + idAlumno, {headers:heads});
   }
 
   getStudents(){
-    if(this.token == null || this.token == "") this.getToken;
+    if(this.token == null || this.token == ""){
+      this.getToken();
+    }
     let heads:HttpHeaders = new HttpHeaders();
     heads.append("Authorization", "Bearer " + this.token);
     return this.http.get<Student[]>(this.urlBase+ "Alumnos", {headers:heads});

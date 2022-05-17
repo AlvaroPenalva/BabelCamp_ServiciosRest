@@ -1,6 +1,7 @@
 package controller;
 
 import java.util.Date;
+
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import dto.CredentialsDto;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+
 @CrossOrigin("*")
 @RestController
 public class AuthController {
